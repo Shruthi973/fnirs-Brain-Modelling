@@ -66,11 +66,14 @@ This machine learning project analyzes fNIRS-based HbO₂ time-series signals to
 ## 📁 Repository Structure
 
 📁 fNIRS_Based_HbO2_Signal_Modeling/
-│
-├── fNIRS_Based_HbO₂_Signal_Modeling.ipynb # Main modeling notebook
-├── fNIRS_Based_HbO₂_Signal_Modeling.html # Rendered version for review
-├── IdentifyingEarlyDecl-AyushiAndYamna.xlsx # Input neuro-behavioral dataset
-└── README.md # This file
+
+# Main modeling notebook
+fNIRS_Based_HbO₂_Signal_Modeling.ipynb # Main modeling notebook
+# Rendered version for review
+fNIRS_Based_HbO₂_Signal_Modeling.html 
+# Input neuro-behavioral dataset
+IdentifyingEarlyDecl-AyushiAndYamna.xlsx # Input neuro-behavioral dataset
+
 
 
 ---
