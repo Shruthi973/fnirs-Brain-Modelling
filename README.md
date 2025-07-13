@@ -1,6 +1,6 @@
-# 🧠 fNIRS-Based HbO₂ Signal Modeling – Phenotype-Specific Cortical Activation in Parkinson’s Disease
+# 🧠 fNIRS-Based HbO₂ Time-Series Modeling – Phenotype-Specific Cortical Activation in Parkinson’s Disease
 
-This machine learning project analyzes fNIRS-based HbO₂ time-series signals to identify differences in cortical activation between Parkinson’s disease phenotypes: Tremor-Dominant (TD) and Postural Instability Gait Disorder (PIGD). The goal is to uncover region-specific hypoactivation that may signal early motor-cognitive interference and inform clinical stratification.
+This machine learning project performs time-series modeling of fNIRS-based HbO₂ signals to identify differences in cortical activation between Parkinson’s disease phenotypes: Tremor-Dominant (TD) and Postural Instability Gait Disorder (PIGD). Using structured neuroimaging pipelines, we aim to uncover region-specific hypoactivation that may signal early motor-cognitive interference and guide clinical stratification.
 
 ---
 
@@ -15,12 +15,12 @@ This machine learning project analyzes fNIRS-based HbO₂ time-series signals to
 
 ## 📊 Key Techniques
 
-- Preprocessing of fNIRS time-series using MNE-NIRS
-- Region-of-interest segmentation (SMA, PFC, PMC)
-- General Linear Modeling (GLM) to compare activation levels
-- Visualization of cortical activation and phenotype contrasts
-- Statistical testing of signal differences (t-tests, effect size)
-- Exploratory classification models (Random Forest, Logistic Regression)
+- Time-series preprocessing and noise rejection using MNE-NIRS
+- Region-of-interest (ROI) segmentation: SMA, PFC, PMC
+- General Linear Modeling (GLM) for activation curve estimation
+- Visualization of cortical activity across phenotypes and conditions
+- Statistical comparison: t-tests, effect size (Cohen's d)
+- Exploratory machine learning (Random Forest, Logistic Regression)
 
 ---
 
@@ -28,38 +28,38 @@ This machine learning project analyzes fNIRS-based HbO₂ time-series signals to
 
 | Model               | Accuracy | ROC AUC | Insight                                      |
 |--------------------|----------|---------|----------------------------------------------|
-| Logistic Regression | 0.82     | 0.87    | Clean separation of TD vs. PIGD under DT     |
-| Random Forest       | 0.86     | 0.91    | Higher stability; better spatial separation  |
+| Logistic Regression | 0.82     | 0.87    | Clear TD vs. PIGD separation in DT tasks     |
+| Random Forest       | 0.86     | 0.91    | Captured non-linear spatial signal variance  |
 
-- GLM revealed consistent hypoactivation in SMA and PFC for PIGD group.
-- Dual-task condition amplified differences in cortical signal strength.
+- GLM analysis showed consistent PIGD hypoactivation in SMA and PFC.
+- Cortical signal divergence increased during dual-task walking.
 
 ---
 
 ## 🔍 Key Insights
 
-- Dual-task walking amplifies neural differences between PD phenotypes.
-- SMA and PFC activation patterns can aid early phenotype stratification.
-- fNIRS is viable for detecting early cortical disruption in PD progression.
-- Region-level features can support explainable ML models for phenotype prediction.
+- Dual-task conditions amplify motor–cognitive phenotype separation.
+- SMA and PFC HbO₂ trends correlate with clinical symptom profiles.
+- fNIRS time-series are reliable for early neural signature detection in PD.
+- Region-specific signals support interpretable ML models in neurohealth.
 
 ---
 
 ## 🧠 Learnings
 
-- Preprocessing and channel mapping in fNIRS is critical before modeling.
-- GLM is a powerful tool for structured fNIRS time-series comparison.
-- Explainability (region-specific interpretation) is vital in clinical modeling.
-- Combining neuro and behavioral data enhances model robustness.
+- High-quality fNIRS preprocessing is essential for valid modeling.
+- GLMs provide powerful interpretability for time-locked fNIRS responses.
+- Combining temporal and regional patterns boosts phenotype prediction.
+- Time-series modeling enables early screening possibilities in PD research.
 
 ---
 
 ## 🛠 Future Enhancements
 
-- Integrate dual-task behavioral performance features into model
-- Expand to multi-class prediction (e.g., control vs. TD vs. PIGD)
-- Deploy an interactive dashboard (Streamlit) to visualize region-level risk
-- Consider temporal dynamics using LSTM for time-window prediction
+- Add LSTM or temporal attention models for fine-grained dynamic analysis
+- Combine behavioral performance metrics with neural features
+- Extend to multi-class modeling (TD vs. PIGD vs. Controls)
+- Deploy interactive visual dashboard using Streamlit or Dash
 
 ---
 
