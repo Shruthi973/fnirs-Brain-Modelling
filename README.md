@@ -3,7 +3,12 @@
 This machine learning project performs time-series modeling of fNIRS-based HbO₂ signals to identify differences in cortical activation between Parkinson’s disease phenotypes: Tremor-Dominant (TD) and Postural Instability Gait Disorder (PIGD). Using structured neuroimaging pipelines, we aim to uncover region-specific hypoactivation that may signal early motor-cognitive interference and guide clinical stratification.
 
 ---
-
+<p align="center">
+  <img src="fnirs.jpg" width="600"/>
+  <br>
+  <em>🧠 fNIRS brain mapping 
+</p>
+---
 ## 🚀 Project Overview
 
 - **Dataset:** REDCap-exported clinical and neuroimaging data (IRB-approved)
